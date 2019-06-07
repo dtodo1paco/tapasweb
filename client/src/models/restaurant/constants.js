@@ -1,0 +1,5 @@
+export const ENTITY_NAME = 'RESTAURANT';
+
+
+export const RECEIVED_OK = `${ENTITY_NAME}_RECEIVED_OK`;
+export const SET_FILTER = `${ENTITY_NAME}_SET_FILTER`;
