@@ -4,7 +4,6 @@ Powered by [![N|Solid](https://dtodo1paco.github.io/cv/build/static/media/favico
 
 Current status: development
 
-[![N|Solid](https://github.com/dtodo1paco/tapasweb/)]
 ![status|20190607](https://github.com/dtodo1paco/tapasweb/raw/master/screenshots/20190607.png)
 
 TapasWeb is a web platform born to help people to choose the best tapas and the nice route to get the tapas they are looking for. Some features:
