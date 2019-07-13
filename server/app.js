@@ -9,8 +9,10 @@ const db = require("./modules/setupModels");
 
 var usersRouter = require('./routes/users');
 var apiSetup = require('./routes/api');
+const swaggerSetup = require('./swagger_setup.js');
 
 var app = express();
+swaggerSetup(app);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

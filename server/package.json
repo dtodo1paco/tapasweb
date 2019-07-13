@@ -13,6 +13,9 @@
     "moment": "^2.24.0",
     "morgan": "~1.9.0",
     "pg": "^7.10.0",
-    "sequelize": "^5.8.2"
-  }
+    "sequelize": "^5.8.2",
+    "swagger-jsdoc": "^3.3.0",
+    "swagger-ui-express": "^4.0.7"
+  },
+  "devDependencies": {}
 }
