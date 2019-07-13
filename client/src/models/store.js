@@ -5,11 +5,12 @@ import { rootReducer } from './reducers';
 import freeze from 'redux-freeze';
 import * as actionCreators from './actions';
 
-const enhancer = window.__REDUX_DEVTOOLS_EXTENSION__ &&
+let enhancer = window.__REDUX_DEVTOOLS_EXTENSION__ &&
   window.__REDUX_DEVTOOLS_EXTENSION__({ actionCreators, serialize: true, trace: true });
 if (!enhancer) {
   console.warn('Install Redux DevTools Extension to inspect the app state: ' +
   'https://github.com/zalmoxisus/redux-devtools-extension#installation')
+  enhancer = void 0;
 }
 
 // const loggerMiddleware = createLogger();
@@ -28,12 +29,7 @@ if (process.env.NODE_ENV !== 'production') {
 let middleware = applyMiddleware(...middlewares);
 
 // create the store
-const store = createStore(
-  rootReducer, compose(
-    middleware,
-    enhancer
-  )
-);
+const store = createStore(rootReducer, compose(middleware),enhancer);
 
 window.forms = [];
 
