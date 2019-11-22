@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types";
-
+import "./styles.css";
 import {
   Autocomplete,
   Button,
@@ -152,7 +152,7 @@ class ToolBar extends React.Component {
           )}
           title={title}
           titleId="search"
-          className="phone-emulator__toolbar"
+          className="gray-toolbar"
         />
         <Drawer
           id="simple-drawer"
