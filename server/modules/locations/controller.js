@@ -12,6 +12,24 @@ module.exports = (api_base, app, db) => {
     create: BASE_PATH + 'add',
   }
   console.log("API endpoints: " + JSON.stringify(BASE_PATH));
+  /**
+   * @swagger
+   * /api/v1/location/:
+   *   security:
+   *     - bearerAuth: []
+   *   get:
+   *     tags:
+   *       - Locations
+   *     name: get locations
+   *     summary: find all locations
+   *     consumes:
+   *       - application/json
+   *     responses:
+   *       '200':
+   *         description: ok
+   *       '401':
+   *         description: unauthorized
+   */
   app.get(ENDPOINTS.findAll, async (req, res) => {
     let data = [];
     let code = 0;
