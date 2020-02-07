@@ -2,7 +2,7 @@
 
 Powered by [![N|Solid](https://dtodo1paco.github.io/cv/build/static/media/favicon.dd4465b0.ico)](https://dtodo1paco.github.io/cv/)
 
-Current status: development
+Current status: early development
 
 ![status|20190607](https://github.com/dtodo1paco/tapasweb/raw/master/screenshots/20190607.png)
 
